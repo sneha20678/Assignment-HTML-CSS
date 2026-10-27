@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 25px;
+            flex: 1;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Responsive Web Design</p>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h2>HTML</h2>
+            <p>HTML se webpage banta hai.</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>CSS se webpage sundar banta hai.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>JavaScript se webpage interactive banta hai.</p>
+        </div>
+    </div>
+
+</body>
+</html>

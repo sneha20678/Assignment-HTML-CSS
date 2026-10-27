@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            position: relative;
+            background-color: lightblue;
+            padding: 60px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero h2 {
+            position: relative;
+            z-index: 2;
+            color: navy;
+            font-size: 30px;
+        }
+
+        .hero p {
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+        }
+
+        .circle {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        button {
+            position: relative;
+            z-index: 2;
+            background-color: navy;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <section class="hero">
+        <div class="circle"></div>
+
+        <h2>Welcome to My Website</h2>
+        <p>Learn HTML and CSS with me.</p>
+        <button>Get Started</button>
+    </section>
+
+</body>
+</html>

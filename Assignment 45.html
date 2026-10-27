@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #243b6b;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 70px 20px;
+            background: #dce7ff;
+        }
+
+        .hero h1 {
+            color: #243b6b;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 12px 24px;
+            background: #243b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Grid Cards */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 8%;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .card h2 {
+            color: #243b6b;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #243b6b;
+            color: white;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+                padding: 25px 6%;
+            }
+        }
+
+        /* Tablet Responsive */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Website</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to My Website</h1>
+            <p>Learn new skills and build your future with us.</p>
+            <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Learn how to create web pages using HTML.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Learn how to make beautiful web pages using CSS.</p>
+        </div>
+
+        <div class="card">
+            <h2>Responsive Design</h2>
+            <p>Make your website work on mobile and laptop screens.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>My Responsive Landing Page | Thank You</p>
+    </footer>
+
+</body>
+</html>

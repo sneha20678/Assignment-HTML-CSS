@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Menu Bar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: navy;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <h1 id="home">Welcome to My Website</h1>
+
+    <p id="about" style="text-align:center;">
+        This is my website.
+    </p>
+
+    <p id="services" style="text-align:center;">
+        Our Services
+    </p>
+
+    <p id="contact" style="text-align:center;">
+        Contact Us
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: lightblue;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Breakpoint 1: Tablet */
+        @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                flex: 1 1 40%;
+            }
+        }
+
+        /* Breakpoint 2: Mobile */
+        @media (max-width: 480px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+        <p>HTML and CSS Project</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>HTML</h2>
+            <p>HTML se webpage banta hai.</p>
+        </section>
+
+        <section class="card">
+            <h2>CSS</h2>
+            <p>CSS se webpage design hota hai.</p>
+        </section>
+
+        <section class="card">
+            <h2>Java</h2>
+            <p>Java ek programming language hai.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

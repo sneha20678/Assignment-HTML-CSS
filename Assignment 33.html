@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid Layout</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 30px 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Grid Layout</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>HTML</p>
+        </div>
+
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>CSS</p>
+        </div>
+
+        <div class="box">
+            <h2>Box 3</h2>
+            <p>JavaScript</p>
+        </div>
+    </div>
+
+</body>
+</html>

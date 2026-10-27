@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            margin: 60px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            transform: rotate(15deg) scale(1.1);
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transform</h1>
+    <p>Box par mouse le jao ya laptop par hover karo.</p>
+
+    <div class="box">
+        <h2>Hello!</h2>
+    </div>
+
+</body>
+</html>

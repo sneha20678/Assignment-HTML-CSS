@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --main-color: navy;
+            --bg-color: #f0f4f8;
+            --text-color: #333333;
+            --space: 20px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--main-color);
+            color: white;
+            text-align: center;
+            padding: var(--space);
+        }
+
+        main {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: var(--space);
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: var(--main-color);
+        }
+
+        button {
+            background-color: var(--main-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: var(--main-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Learning CSS Variables</p>
+    </header>
+
+    <main>
+        <h2>About CSS Variables</h2>
+        <p>
+            CSS variables help us reuse colours,
+            spacing and other values in our website.
+        </p>
+
+        <button>Learn More</button>
+    </main>
+
+    <footer>
+        <p>My CSS Assignment</p>
+    </footer>
+
+</body>
+</html>
